@@ -1,0 +1,578 @@
+# Translation of volmixer in Spanish
+# This file is distributed under the same license as volmixer.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: volmixer\n"
+"Report-Msgid-Bugs-To: https://github.com/aikde8/volmixer/issues\n"
+"PO-Revision-Date: 2026-10-21 21:23\n"
+"Language-Team: Spanish\n"
+"Language: es\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+msgctxt "tab.view"
+msgid "View"
+msgstr "Vista"
+
+msgctxt "tab.devices"
+msgid "Devices"
+msgstr "Dispositivos"
+
+msgctxt "tab.logic"
+msgid "Logic"
+msgstr "Lógica"
+
+msgctxt "common.disconnected"
+msgid "%1 (currently disconnected)"
+msgstr "%1 (actualmente desconectado)"
+
+msgctxt "btkind.ask-icon"
+msgid "ask (shows a “?” icon)"
+msgstr "preguntar (icono «?»)"
+
+msgctxt "btkind.ask-icon-infl"
+msgid "ask (shows a “?” icon)"
+msgstr "preguntar (icono «?»)"
+
+msgctxt "btkind.headset"
+msgid "Headset / headphones"
+msgstr "Auriculares con micrófono / cascos"
+
+msgctxt "btkind.tws"
+msgid "TWS earbuds"
+msgstr "Auriculares TWS"
+
+msgctxt "btkind.compact"
+msgid "Compact speaker"
+msgstr "Altavoz compacto"
+
+msgctxt "btkind.sub"
+msgid "Speaker with subwoofer"
+msgstr "Altavoz con subwoofer"
+
+msgctxt "btkind.by-class"
+msgid "by Bluetooth class"
+msgstr "según la clase de Bluetooth"
+
+msgctxt "btkind.as-headset"
+msgid "treat as a headset"
+msgstr "tratar como auriculares"
+
+msgctxt "logic.headset-connect.label"
+msgid "When a headset is connected:"
+msgstr "Al conectar unos auriculares:"
+
+msgctxt "logic.switch-sinks"
+msgid "switch the speakers to it"
+msgstr "cambiar los altavoces a este dispositivo"
+
+msgctxt "logic.switch-source"
+msgid "switch the microphone to it"
+msgstr "cambiar el micrófono a este dispositivo"
+
+msgctxt "logic.set-volume"
+msgid "set its volume"
+msgstr "establecer su volumen"
+
+msgctxt "logic.headset-disconnect-sink.label"
+msgid "When the headset is removed, speakers:"
+msgstr "Al desconectar los auriculares, los altavoces:"
+
+msgctxt "logic.fallback-sink-builtin"
+msgid "Built-in (automatically)"
+msgstr "Integrados (automático)"
+
+msgctxt "logic.headset-disconnect-source.label"
+msgid "When the headset is removed, microphone:"
+msgstr "Al desconectar los auriculares, el micrófono:"
+
+msgctxt "logic.fallback-source-builtin"
+msgid "Built-in (automatically)"
+msgstr "Integrado (automático)"
+
+msgctxt "logic.pause.label"
+msgid "When the audio source changes:"
+msgstr "Al cambiar la fuente de sonido:"
+
+msgctxt "logic.pause.pause"
+msgid "pause currently playing media"
+msgstr "pausar la reproducción en curso"
+
+msgctxt "logic.speaker-connect.label"
+msgid "When a speaker is connected:"
+msgstr "Al conectar un altavoz:"
+
+msgctxt "logic.speaker-tooltip"
+msgid "A speaker only takes over the speakers; the applet does not touch its microphone or volume. What counts as a speaker vs. a headset is set on the Devices page; a device without an answer to “what is it” is left alone by automation."
+msgstr "Un altavoz solo reemplaza a los altavoces; el applet no toca su micrófono ni su volumen. Qué cuenta como altavoz y qué como auriculares se define en la página «Dispositivos»; un dispositivo sin respuesta a «qué es» no lo toca la automatización."
+
+msgctxt "logic.call.label"
+msgid "During a call, when a Bluetooth microphone is selected:"
+msgstr "Durante una llamada, cuando se selecciona un micrófono Bluetooth:"
+
+msgctxt "logic.call.switch-profile"
+msgid "switch the device into headset mode"
+msgstr "cambiar el dispositivo al modo auriculares"
+
+msgctxt "logic.call.tooltip"
+msgid "“Call” means there are active recording streams. If the device’s card is in music mode (A2DP, which has no microphone), it is switched to the best headset mode (mSBC, otherwise CVSD) and streams from the previous microphone are moved to the new one. When recording stops, WirePlumber restores music mode on its own. Outside of calls nothing changes — headset mode degrades sound quality."
+msgstr "«Llamada» significa que hay flujos de grabación activos. Si la tarjeta del dispositivo está en modo música (A2DP, que no tiene micrófono), se cambia al mejor modo auriculares (mSBC, en su defecto CVSD) y los flujos del micrófono anterior se trasladan al nuevo. Cuando termina la grabación, WirePlumber restaura el modo música por sí mismo. Fuera de llamadas no cambia nada: el modo auriculares empeora el sonido."
+
+msgctxt "logic.pin-browser.label"
+msgid "Pin the browser recording stream to:"
+msgstr "Fijar el flujo de grabación del navegador a:"
+
+msgctxt "logic.pin-browser.none"
+msgid "Don’t pin"
+msgstr "No fijar"
+
+msgctxt "logic.pin-browser.tooltip"
+msgid "Browsers (Yandex, Chrome, Firefox, …) often keep a microphone recording stream open permanently — a voice assistant or a tab with permission — and drag it onto the headset: the headset drops into headset mode and never returns to music. A stream pinned to another microphone leaves the headset alone."
+msgstr "Los navegadores (Yandex, Chrome, Firefox…) suelen mantener abierto un flujo de grabación de micrófono permanentemente — un asistente de voz o una pestaña con permiso — y lo arrastran hacia los auriculares: estos pasan al modo auriculares y no regresan a la música. Un flujo fijado a otro micrófono deja los auriculares en paz."
+
+msgctxt "logic.footer-tooltip"
+msgid "“Headset” here means a Bluetooth or USB device. Headphones plugged into a jack don’t add a device, they switch the port, so this logic does not apply to them."
+msgstr "«Auriculares» aquí significa un dispositivo Bluetooth o USB. Unos cascos en el jack no añaden un dispositivo, solo cambian el puerto, y esta lógica no les afecta."
+
+msgctxt "devices.section.bt"
+msgid "Bluetooth devices"
+msgstr "Dispositivos Bluetooth"
+
+msgctxt "devices.kind.label"
+msgid "What is it:"
+msgstr "Qué es:"
+
+msgctxt "devices.none"
+msgid "No Bluetooth devices yet"
+msgstr "Aún no hay dispositivos Bluetooth"
+
+msgctxt "devices.new.label"
+msgid "New device:"
+msgstr "Dispositivo nuevo:"
+
+msgctxt "devices.footer-tooltip"
+msgid "The type sets the icon and the behaviour: headsets and TWS earbuds follow the headset logic, speakers only take over the speakers. Until an answer is given, the device shows a “?” icon in the mixer and automation leaves it alone. The Bluetooth class is unreliable: the Tronsmart Element T6 Plus reports itself as a headset with a microphone."
+msgstr "El tipo determina el icono y el comportamiento: los auriculares y los TWS siguen la lógica de auriculares, los altavoces solo sustituyen a los altavoces. Hasta que haya respuesta, el dispositivo aparece con un icono «?» en el mezclador y la automatización no lo toca. La clase de Bluetooth no es fiable: el Tronsmart Element T6 Plus se anuncia como auriculares con micrófono."
+
+msgctxt "devices.section.labels"
+msgid "Device labels"
+msgstr "Etiquetas de los dispositivos"
+
+msgctxt "devices.labels.sinks"
+msgid "Speakers:"
+msgstr "Altavoces:"
+
+msgctxt "devices.labels.sources"
+msgid "Microphones:"
+msgstr "Micrófonos:"
+
+msgctxt "devices.labels.footer"
+msgid "The label is shown in place of the automatic one; the tooltip still shows the full device name."
+msgstr "La etiqueta sustituye a la automática; la ayuda emergente sigue mostrando el nombre completo del dispositivo."
+
+msgctxt "devices.show-virtual"
+msgid "Show virtual devices"
+msgstr "Mostrar dispositivos virtuales"
+
+msgctxt "devices.label.placeholder"
+msgid "as shown in the mixer"
+msgstr "como en el mezclador"
+
+msgctxt "devices.label.reset-tooltip"
+msgid "Reset label"
+msgstr "Restablecer etiqueta"
+
+msgctxt "mixer.label.jack-mic"
+msgid ""
+"Microphone\n"
+"(jack)"
+msgstr ""
+"Micrófono\n"
+"(jack)"
+
+msgctxt "mixer.label.jack-headset"
+msgid ""
+"Headphones\n"
+"(jack)"
+msgstr ""
+"Auriculares\n"
+"(jack)"
+
+msgctxt "mixer.label.jack-speaker"
+msgid ""
+"Speakers\n"
+"(jack)"
+msgstr ""
+"Altavoces\n"
+"(jack)"
+
+msgctxt "mixer.label.usb-headset"
+msgid "USB headset"
+msgstr "Auriculares USB"
+
+msgctxt "mixer.label.usb-mic"
+msgid "USB microphone"
+msgstr "Micrófono USB"
+
+msgctxt "mixer.label.bt-headset"
+msgid "Bluetooth headset"
+msgstr "Auriculares Bluetooth"
+
+msgctxt "mixer.label.bt-mic"
+msgid "Bluetooth microphone"
+msgstr "Micrófono Bluetooth"
+
+msgctxt "mixer.label.hdmi"
+msgid "HDMI"
+msgstr "HDMI"
+
+msgctxt "mixer.label.internal-mic"
+msgid "Built-in microphone"
+msgstr "Micrófono integrado"
+
+msgctxt "mixer.label.internal-speaker"
+msgid "Built-in speaker"
+msgstr "Altavoz integrado"
+
+msgctxt "mixer.label.mic"
+msgid "Microphone"
+msgstr "Micrófono"
+
+msgctxt "mixer.label.headset"
+msgid "Headset"
+msgstr "Auriculares"
+
+msgctxt "mixer.label.speaker"
+msgid "Speaker"
+msgstr "Altavoz"
+
+msgctxt "mixer.label.notifications"
+msgid "Notification sounds"
+msgstr "Sonidos de notificaciones"
+
+msgctxt "mixer.stream-no-name"
+msgid "Stream name not found"
+msgstr "Nombre del flujo no encontrado"
+
+msgctxt "mixer.menu.ask-tooltip"
+msgid "What is this device? Click and choose"
+msgstr "¿Qué dispositivo es? Haga clic y elija"
+
+msgctxt "mixer.menu.what-is"
+msgid "%1 — what is it?"
+msgstr "%1 — ¿qué es?"
+
+msgctxt "mixer.volume-percent"
+msgid "%1%"
+msgstr "%1 %"
+
+msgctxt "mixer.a11y.volume"
+msgid "Volume %1"
+msgstr "Volumen %1"
+
+msgctxt "@action:button mixer.button.unmute"
+msgid "Unmute"
+msgstr "Activar sonido"
+
+msgctxt "@action:button mixer.button.mute"
+msgid "Mute"
+msgstr "Silenciar"
+
+msgctxt "mixer.a11y.unmute-item"
+msgid "Unmute: %1"
+msgstr "Activar sonido: %1"
+
+msgctxt "mixer.a11y.mute-item"
+msgid "Mute: %1"
+msgstr "Silenciar: %1"
+
+msgctxt "plasmoid.display-name"
+msgid "Volume"
+msgstr "Volumen"
+
+msgctxt "@label plasmoid.err.lost"
+msgid "Connection to the sound service was lost"
+msgstr "Se ha perdido la conexión con el servicio de sonido"
+
+msgctxt "plasmoid.err.no-devices"
+msgid "No output or input devices found"
+msgstr "No se encontraron dispositivos de entrada ni de salida"
+
+msgctxt "@info plasmoid.err.reconnecting"
+msgid "Reconnecting…"
+msgstr "Reconectando…"
+
+msgctxt "plasmoid.tooltip.muted"
+msgid "Sound is muted"
+msgstr "Sonido silenciado"
+
+msgctxt "plasmoid.tooltip.volume"
+msgid "Volume %1%"
+msgstr "Volumen %1 %"
+
+msgctxt "plasmoid.tooltip.middle-unmute"
+msgid "Middle click: unmute"
+msgstr "Clic central: activar sonido"
+
+msgctxt "plasmoid.tooltip.middle-mute"
+msgid "Middle click: mute everything"
+msgstr "Clic central: silenciar todo"
+
+msgctxt "plasmoid.tooltip.wheel"
+msgid "Scroll wheel: change volume"
+msgstr "Rueda del ratón: cambiar el volumen"
+
+msgctxt "plasmoid.err.no-device-name"
+msgid "Device name not found"
+msgstr "Nombre del dispositivo no encontrado"
+
+msgctxt "@action:button plasmoid.button.more"
+msgid "More actions"
+msgstr "Más acciones"
+
+msgctxt "@action:button plasmoid.button.pin"
+msgid "Keep open"
+msgstr "Mantener abierto"
+
+msgctxt "plasmoid.group.recording"
+msgid "Recording"
+msgstr "Grabación"
+
+msgctxt "plasmoid.group.applications"
+msgid "Applications"
+msgstr "Aplicaciones"
+
+msgctxt "plasmoid.group.notifications"
+msgid "Notifications"
+msgstr "Notificaciones"
+
+msgctxt "plasmoid.group.microphones"
+msgid "Microphones"
+msgstr "Micrófonos"
+
+msgctxt "plasmoid.group.speakers"
+msgid "Speakers"
+msgstr "Altavoces"
+
+msgctxt "@action plasmoid.button.retry"
+msgid "Retry"
+msgstr "Reintentar"
+
+msgctxt "@info plasmoid.boost.warning"
+msgid "Prolonged use of this feature will damage the device’s speakers. Only turn it on briefly to make out a quiet recording."
+msgstr "El uso prolongado de esta función dañará los altavoces del dispositivo. Actívela solo brevemente para oír una grabación muy baja."
+
+msgctxt "plasmoid.boost.enable"
+msgid "Raise maximum volume"
+msgstr "Aumentar el volumen máximo"
+
+msgctxt "plasmoid.action.mute-all-sinks"
+msgid "Force-mute every playback device"
+msgstr "Silenciar forzosamente todos los dispositivos de reproducción"
+
+msgctxt "plasmoid.action.mute-all-sources"
+msgid "Force-mute every input device"
+msgstr "Silenciar forzosamente todos los dispositivos de entrada"
+
+msgctxt "plasmoid.action.show-virtual"
+msgid "Show virtual devices"
+msgstr "Mostrar dispositivos virtuales"
+
+msgctxt "plasmoid.action.configure"
+msgid "Configure audio devices…"
+msgstr "Configurar los dispositivos de audio…"
+
+msgctxt "general.item-width"
+msgid "Item width (px):"
+msgstr "Anchura del elemento (px):"
+
+msgctxt "general.slider-height"
+msgid "Slider height (px):"
+msgstr "Altura del deslizador (px):"
+
+msgctxt "general.font.label"
+msgid "Label font:"
+msgstr "Fuente de las etiquetas:"
+
+msgctxt "general.font.summary"
+msgid "%1, %2 pt%3"
+msgstr "%1, %2 pt%3"
+
+msgctxt "general.font.bold-suffix"
+msgid ", bold"
+msgstr ", negrita"
+
+msgctxt "general.font.system-summary"
+msgid "System (%1, %2 pt)"
+msgstr "Del sistema (%1, %2 pt)"
+
+msgctxt "general.font.choose"
+msgid "Choose…"
+msgstr "Elegir…"
+
+msgctxt "general.font.system"
+msgid "System"
+msgstr "Del sistema"
+
+msgctxt "general.accent-color"
+msgid "Accent colour:"
+msgstr "Color de acento:"
+
+msgctxt "general.accent-color.hint"
+msgid "marks the default device and lights the mute-button LED"
+msgstr "marca el dispositivo predeterminado y enciende el LED del botón «Silenciar»"
+
+msgctxt "general.default-mark.label"
+msgid "Default device:"
+msgstr "Dispositivo predeterminado:"
+
+msgctxt "general.default-mark.corner"
+msgid "Radio button above the icon"
+msgstr "Botón de opción encima del icono"
+
+msgctxt "general.default-mark.badge"
+msgid "Checkmark in the icon’s corner"
+msgstr "Marca de verificación en la esquina del icono"
+
+msgctxt "general.default-mark.halo"
+msgid "Icon halo"
+msgstr "Resplandor del icono"
+
+msgctxt "general.default-mark.bottom"
+msgid "Radio button at the bottom, next to the mute button"
+msgstr "Botón de opción abajo, junto a «Silenciar»"
+
+msgctxt "general.mute-style.label"
+msgid "Mute button:"
+msgstr "Botón «Silenciar»:"
+
+msgctxt "general.mute-style.theme"
+msgid "Theme icon"
+msgstr "Icono del tema"
+
+msgctxt "general.mute-style.icons8"
+msgid "Volumetric icon, like the devices"
+msgstr "Icono volumétrico, como el de los dispositivos"
+
+msgctxt "general.mute-style.led"
+msgid "Button with an LED"
+msgstr "Botón con LED"
+
+msgctxt "general.led-blink.label"
+msgid "LED blinking:"
+msgstr "Parpadeo del LED:"
+
+msgctxt "general.led-blink.off"
+msgid "Don’t blink"
+msgstr "No parpadear"
+
+msgctxt "general.led-blink.muted"
+msgid "Blink when muted"
+msgstr "Parpadear al silenciar"
+
+msgctxt "general.led-blink.signal"
+msgid "Pulse with the signal"
+msgstr "Al ritmo de la señal"
+
+msgctxt "general.section.bars"
+msgid "Volume bars"
+msgstr "Barras de volumen"
+
+msgctxt "general.bar-shape.label"
+msgid "Shape:"
+msgstr "Forma:"
+
+msgctxt "general.bar-shape.wedge"
+msgid "Wedge, handle on the left"
+msgstr "Cuña, mando a la izquierda"
+
+msgctxt "general.bar-shape.bar"
+msgid "Narrow rectangle, handle in the centre"
+msgstr "Rectángulo estrecho, mando en el centro"
+
+msgctxt "general.bar-shape.barleft"
+msgid "Narrow rectangle, handle on the left"
+msgstr "Rectángulo estrecho, mando a la izquierda"
+
+msgctxt "general.handle.label"
+msgid "Handle:"
+msgstr "Mando:"
+
+msgctxt "general.handle.horizontal"
+msgid "Horizontal"
+msgstr "Horizontal"
+
+msgctxt "general.handle.vertical"
+msgid "Vertical"
+msgstr "Vertical"
+
+msgctxt "general.fill.label"
+msgid "Fill:"
+msgstr "Relleno:"
+
+msgctxt "general.fill.plain"
+msgid "Plain"
+msgstr "Normal"
+
+msgctxt "general.fill.glass"
+msgid "Glass"
+msgstr "Vidrio"
+
+msgctxt "general.fill.led"
+msgid "LED meter"
+msgstr "Barra de LEDs"
+
+msgctxt "general.signal-scale.label"
+msgid "Signal-level scale:"
+msgstr "Escala del nivel de señal:"
+
+msgctxt "general.signal-scale.linear"
+msgid "Linear: peak as-is, speech ≈ 25 %"
+msgstr "Lineal: pico tal cual, voz ≈ 25 %"
+
+msgctxt "general.signal-scale.db"
+msgid "In decibels, 60 dB: speech ≈ 80 %"
+msgstr "En decibelios, 60 dB: voz ≈ 80 %"
+
+msgctxt "general.custom-colors"
+msgid "Custom colours (otherwise theme colours)"
+msgstr "Colores propios (si no, los del tema)"
+
+msgctxt "general.zone-colors"
+msgid "Colour volume by level: green, yellow, red"
+msgstr "Colorear el volumen según el nivel: verde, amarillo, rojo"
+
+msgctxt "general.zone-by-signal"
+msgid "Fill tracks the signal: zone height and colour follow its level, no stream — empty"
+msgstr "El relleno sigue a la señal: la altura y el color de la zona dependen del nivel, sin flujo — vacío"
+
+msgctxt "general.volume.label"
+msgid "Volume:"
+msgstr "Volumen:"
+
+msgctxt "general.opacity"
+msgid "opacity"
+msgstr "opacidad"
+
+msgctxt "general.signal.label"
+msgid "Signal level:"
+msgstr "Nivel de señal:"
+
+msgctxt "general.dim.label"
+msgid "Unfilled part:"
+msgstr "Parte sin rellenar:"
+
+msgctxt "general.font.dialog-title"
+msgid "Font for device and application labels"
+msgstr "Fuente para las etiquetas de dispositivos y aplicaciones"
+
+msgctxt "mixer.default-radio.on"
+msgid "Default device"
+msgstr "Dispositivo predeterminado"
+
+msgctxt "mixer.default-radio.off"
+msgid "Set as default device"
+msgstr "Establecer como dispositivo predeterminado"

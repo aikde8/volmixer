@@ -1,0 +1,30 @@
+{
+    "KPackageStructure": "Plasma/Applet",
+    "KPlugin": {
+        "Authors": [
+            {
+                "Name": "AIKDE"
+            }
+        ],
+        "BugReportUrl": "https://github.com/aikde8/volmixer/issues",
+        "Category": "Multimedia",
+        "Description": "Intelligent volume control plugin",
+        "Description[de]": "Intelligentes Plugin zur Lautstärkeregelung",
+        "Description[es]": "Complemento inteligente de control de volumen",
+        "Description[fr]": "Plugin intelligent de contrôle du volume",
+        "Description[ru]": "Интеллектуальный плагин управления громкостью",
+        "EnabledByDefault": true,
+        "FormFactors": [
+            "desktop"
+        ],
+        "Icon": "volmixer",
+        "Id": "org.kde.plasma.volmixer",
+        "License": "GPL-3.0-only",
+        "Name": "Volmixer",
+        "Name[ru]": "Volmixer",
+        "TranslationDomain": "plasma_applet_org.kde.plasma.volmixer",
+        "Version": "1.0.1",
+        "Website": "https://github.com/aikde8/volmixer"
+    },
+    "X-Plasma-API-Minimum-Version": "6.0"
+}

@@ -1,0 +1,6 @@
+#!/bin/sh
+# Reinstall and restart plasmashell (otherwise QML changes in an already loaded applet are not picked up).
+set -eu
+cd "$(dirname "$0")"
+sh ./install
+systemctl --user restart plasma-plasmashell.service

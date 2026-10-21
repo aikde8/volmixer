@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kcfg xmlns="http://www.kde.org/standards/kcfg/1.0"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.kde.org/standards/kcfg/1.0
+      http://www.kde.org/standards/kcfg/1.0/kcfg.xsd" >
+  <kcfgfile name=""/>
+
+  <group name="General">
+    <!-- Stock-applet mechanics: these keys are read by the stock applet's code. -->
+    <entry name="showVirtualDevices" type="Bool">
+      <default>false</default>
+    </entry>
+    <entry name="pin" type="Bool">
+      <label>Whether to keep the popup open after losing focus</label>
+      <default>false</default>
+    </entry>
+    <!-- Layout: width of a single item and slider height, in pixels. -->
+    <entry name="itemWidth" type="Int">
+      <default>80</default>
+    </entry>
+    <entry name="sliderHeight" type="Int">
+      <default>220</default>
+    </entry>
+    <!-- Device/application label font: empty family and size 0 mean "system font". -->
+    <entry name="labelFontFamily" type="String">
+      <default></default>
+    </entry>
+    <entry name="labelFontSize" type="Int">
+      <default>0</default>
+    </entry>
+    <entry name="labelFontBold" type="Bool">
+      <default>false</default>
+    </entry>
+    <!-- Volume bars: custom colours (otherwise theme colours) with opacity in percent. -->
+    <!-- Bar fill: plain (legacy), glass, led (LED meter); the legacy "zones" value became
+         plain + zoneColors. -->
+    <entry name="barStyle" type="String">
+      <default>plain</default>
+    </entry>
+    <!-- Bar shape: wedge (handle on the rail at the left), bar (narrow rectangle, handle in
+         the middle), barleft (narrow rectangle, handle on the left); empty means it is
+         derived from the legacy barStyle (bar/barled) or defaults to wedge. -->
+    <!-- Slider handle: horizontal (legacy) or vertical — same image rotated 90°. -->
+    <entry name="handleOrientation" type="String">
+      <default>horizontal</default>
+    </entry>
+    <entry name="barShape" type="String">
+      <default></default>
+    </entry>
+    <!-- Accent colour: marks the default device (checkmark, halo) and lights the mute button
+         LED. -->
+    <entry name="iconAccentColor" type="Color">
+      <default>#1e7b3c</default>
+    </entry>
+    <entry name="defaultMark" type="String">
+      <default>corner</default>
+    </entry>
+    <entry name="muteStyle" type="String">
+      <default>theme</default>
+    </entry>
+    <!-- Mute-button LED behaviour: off — stays lit; muted — blinks while muted; signal —
+         brightens with the signal level. -->
+    <entry name="ledBlink" type="String">
+      <default>muted</default>
+    </entry>
+    <entry name="useCustomColors" type="Bool">
+      <default>false</default>
+    </entry>
+    <!-- Colour-by-level (green, yellow, red) instead of the volume colour; combines with any
+         fill. -->
+    <entry name="zoneColors" type="Bool">
+      <default>false</default>
+    </entry>
+    <!-- Whole-fill zones follow the current signal level (one colour pulsing with the signal),
+         rather than a static gradient based on position. -->
+    <entry name="zoneBySignal" type="Bool">
+      <default>false</default>
+    </entry>
+    <!-- Signal-level scale: linear — peak 0..1 as-is; db — in decibels, 60 dB range
+         (peak 0.25 = −12 dB = 80 % height). -->
+    <entry name="signalScale" type="String">
+      <default>linear</default>
+    </entry>
+    <!-- Headset logic: when a Bluetooth/USB headset is connected, make it the default
+         speakers/microphone and set its volume. On disconnect, fall back to the device named
+         by PulseAudio name (empty means built-in). -->
+    <entry name="headsetSwitchSink" type="Bool">
+      <default>true</default>
+    </entry>
+    <entry name="headsetSwitchSource" type="Bool">
+      <default>true</default>
+    </entry>
+    <entry name="headsetSetVolume" type="Bool">
+      <default>false</default>
+    </entry>
+    <entry name="headsetVolumePercent" type="Int">
+      <default>30</default>
+    </entry>
+    <!-- Pause currently playing MPRIS players when sound moves to or from the headset. -->
+    <entry name="headsetPauseMedia" type="Bool">
+      <default>false</default>
+    </entry>
+    <entry name="fallbackSink" type="String">
+      <default></default>
+    </entry>
+    <entry name="fallbackSource" type="String">
+      <default></default>
+    </entry>
+    <!-- Browser recording stream (matched by process name — see
+         DeviceLabels.isBrowserStream) is moved to this microphone (PulseAudio name).
+         Empty means do nothing. Otherwise the browser keeps the headset in HFP and never
+         releases it while recording. -->
+    <entry name="pinBrowserSource" type="String">
+      <default></default>
+    </entry>
+    <!-- Speakers: when a Bluetooth speaker (kind compact/sub) is connected, make it the
+         default speakers; its microphone and volume are left alone. -->
+    <entry name="speakerSwitchSink" type="Bool">
+      <default>true</default>
+    </entry>
+    <!-- Bluetooth device types (the "what is it" answer; see DeviceLabels.btKind):
+         JSON {"card name": {"kind": headset|tws|compact|sub, "name": description}}. Written by
+         the "?" menu in the mixer and by the Devices page. btNewDevice controls devices
+         without an answer: ask (shows the "?" icon, automation leaves them alone),
+         auto (guess from the Bluetooth class), headset (treat as a headset). -->
+    <entry name="btKinds" type="String">
+      <default>{}</default>
+    </entry>
+    <entry name="btNewDevice" type="String">
+      <default>ask</default>
+    </entry>
+    <!-- During a call (active recording streams exist) the user picks a Bluetooth
+         microphone whose card is in A2DP: switch the card to the best headset profile
+         (mSBC, otherwise CVSD) and move streams from the previous microphone to the new one. -->
+    <entry name="callSwitchProfile" type="Bool">
+      <default>true</default>
+    </entry>
+    <!-- Custom device labels: JSON {"PulseAudio name": "label"}; empty means the default
+         label. -->
+    <entry name="deviceNames" type="String">
+      <default>{}</default>
+    </entry>
+    <entry name="fillColor" type="Color">
+      <default>#a66bd1</default>
+    </entry>
+    <entry name="peakColor" type="Color">
+      <default>#d2a8ff</default>
+    </entry>
+    <entry name="dimColor" type="Color">
+      <default>#eff0f1</default>
+    </entry>
+    <entry name="fillOpacity" type="Int">
+      <default>100</default>
+    </entry>
+    <entry name="peakOpacity" type="Int">
+      <default>100</default>
+    </entry>
+    <entry name="dimOpacity" type="Int">
+      <default>45</default>
+    </entry>
+  </group>
+</kcfg>

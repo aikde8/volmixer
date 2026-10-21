@@ -1,0 +1,4 @@
+#!/bin/sh
+# Preview without installing: plasmoidviewer from the plasma-sdk package (sudo apt install plasma-sdk).
+cd "$(dirname "$0")"
+exec plasmoidviewer -a package -l topedge -f horizontal "$@"

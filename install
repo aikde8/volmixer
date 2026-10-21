@@ -1,0 +1,28 @@
+#!/bin/sh
+# Install or update the applet for the current user (Plasma 6):
+# ~/.local/share/plasma/plasmoids/org.kde.plasma.volmixer
+set -eu
+cd "$(dirname "$0")"
+
+# Build the translation catalogs (.po -> .mo under contents/locale/).
+# Python 3 is already a dependency of plasmashell on every supported distro,
+# and the compiler we ship (translate/msgfmt.py) is pure Python, so we don't
+# need the gettext package here.
+python3 package/translate/build.py
+
+# Register the widget icon in the user's hicolor theme so that
+# KPluginMetaData (plasmashell's "About" dialog, package manager) can find it
+# by the name set in metadata.json (KPlugin.Icon = "volmixer").
+ICON_DIR="$HOME/.local/share/icons/hicolor/scalable/apps"
+mkdir -p "$ICON_DIR"
+install -m 644 package/contents/images/volmixer.svg "$ICON_DIR/volmixer.svg"
+# Refresh the icon cache if gtk-update-icon-cache is available (non-fatal).
+command -v gtk-update-icon-cache >/dev/null 2>&1 && \
+    gtk-update-icon-cache -q -f -t "$HOME/.local/share/icons/hicolor" >/dev/null 2>&1 || true
+
+if kpackagetool6 -t Plasma/Applet --show org.kde.plasma.volmixer >/dev/null 2>&1; then
+	kpackagetool6 -t Plasma/Applet -u package
+else
+	kpackagetool6 -t Plasma/Applet -i package
+fi
+echo "Done. Add the Volmixer widget to a panel; the stock Volume applet can be hidden in the system tray settings."

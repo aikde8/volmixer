@@ -1,0 +1,578 @@
+# Translation of volmixer in Russian
+# This file is distributed under the same license as volmixer.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: volmixer\n"
+"Report-Msgid-Bugs-To: https://github.com/aikde8/volmixer/issues\n"
+"PO-Revision-Date: 2026-10-21 21:23\n"
+"Language-Team: Russian\n"
+"Language: ru\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+
+msgctxt "tab.view"
+msgid "View"
+msgstr "Вид"
+
+msgctxt "tab.devices"
+msgid "Devices"
+msgstr "Устройства"
+
+msgctxt "tab.logic"
+msgid "Logic"
+msgstr "Логика"
+
+msgctxt "common.disconnected"
+msgid "%1 (currently disconnected)"
+msgstr "%1 (сейчас не подключено)"
+
+msgctxt "btkind.ask-icon"
+msgid "ask (shows a “?” icon)"
+msgstr "спросить (значок «?»)"
+
+msgctxt "btkind.ask-icon-infl"
+msgid "ask (shows a “?” icon)"
+msgstr "спрашивать (значок «?»)"
+
+msgctxt "btkind.headset"
+msgid "Headset / headphones"
+msgstr "Гарнитура / наушники"
+
+msgctxt "btkind.tws"
+msgid "TWS earbuds"
+msgstr "TWS‑наушники"
+
+msgctxt "btkind.compact"
+msgid "Compact speaker"
+msgstr "Компактная колонка"
+
+msgctxt "btkind.sub"
+msgid "Speaker with subwoofer"
+msgstr "Колонка с сабвуфером"
+
+msgctxt "btkind.by-class"
+msgid "by Bluetooth class"
+msgstr "по классу Bluetooth"
+
+msgctxt "btkind.as-headset"
+msgid "treat as a headset"
+msgstr "считать гарнитурой"
+
+msgctxt "logic.headset-connect.label"
+msgid "When a headset is connected:"
+msgstr "При подключении гарнитуры:"
+
+msgctxt "logic.switch-sinks"
+msgid "switch the speakers to it"
+msgstr "переключать на неё динамики"
+
+msgctxt "logic.switch-source"
+msgid "switch the microphone to it"
+msgstr "переключать на неё микрофон"
+
+msgctxt "logic.set-volume"
+msgid "set its volume"
+msgstr "ставить её громкость"
+
+msgctxt "logic.headset-disconnect-sink.label"
+msgid "When the headset is removed, speakers:"
+msgstr "При отключении гарнитуры динамики:"
+
+msgctxt "logic.fallback-sink-builtin"
+msgid "Built-in (automatically)"
+msgstr "Встроенные (автоматически)"
+
+msgctxt "logic.headset-disconnect-source.label"
+msgid "When the headset is removed, microphone:"
+msgstr "При отключении гарнитуры микрофон:"
+
+msgctxt "logic.fallback-source-builtin"
+msgid "Built-in (automatically)"
+msgstr "Встроенный (автоматически)"
+
+msgctxt "logic.pause.label"
+msgid "When the audio source changes:"
+msgstr "При смене источника звука:"
+
+msgctxt "logic.pause.pause"
+msgid "pause currently playing media"
+msgstr "ставить музыку на паузу"
+
+msgctxt "logic.speaker-connect.label"
+msgid "When a speaker is connected:"
+msgstr "При подключении колонки:"
+
+msgctxt "logic.speaker-tooltip"
+msgid "A speaker only takes over the speakers; the applet does not touch its microphone or volume. What counts as a speaker vs. a headset is set on the Devices page; a device without an answer to “what is it” is left alone by automation."
+msgstr "Колонка переключает на себя только динамики; её микрофон и громкость апплет не трогает. Что считать колонкой, а что гарнитурой — на странице «Устройства»; устройство без ответа «что это» автоматика не трогает."
+
+msgctxt "logic.call.label"
+msgid "During a call, when a Bluetooth microphone is selected:"
+msgstr "Во время разговора выбран микрофон Bluetooth:"
+
+msgctxt "logic.call.switch-profile"
+msgid "switch the device into headset mode"
+msgstr "включать на устройстве режим гарнитуры"
+
+msgctxt "logic.call.tooltip"
+msgid "“Call” means there are active recording streams. If the device’s card is in music mode (A2DP, which has no microphone), it is switched to the best headset mode (mSBC, otherwise CVSD) and streams from the previous microphone are moved to the new one. When recording stops, WirePlumber restores music mode on its own. Outside of calls nothing changes — headset mode degrades sound quality."
+msgstr "Разговор — есть активные потоки записи. Если карта устройства в режиме музыки (A2DP), где микрофона нет, она переключается на лучший режим гарнитуры (mSBC, иначе CVSD), а потоки с прежнего микрофона переводятся на новый. Когда запись заканчивается, WirePlumber сам возвращает музыкальный режим. Без разговора ничего не меняется — режим гарнитуры портит звук."
+
+msgctxt "logic.pin-browser.label"
+msgid "Pin the browser recording stream to:"
+msgstr "Закрепить поток браузера за:"
+
+msgctxt "logic.pin-browser.none"
+msgid "Don’t pin"
+msgstr "Не закреплять"
+
+msgctxt "logic.pin-browser.tooltip"
+msgid "Browsers (Yandex, Chrome, Firefox, …) often keep a microphone recording stream open permanently — a voice assistant or a tab with permission — and drag it onto the headset: the headset drops into headset mode and never returns to music. A stream pinned to another microphone leaves the headset alone."
+msgstr "Браузер (Яндекс, Chrome, Firefox…) часто держит запись с микрофона постоянно — голосовой помощник или вкладка с разрешением — и тянет её на гарнитуру: та уходит в режим гарнитуры и не возвращается к музыке. Поток, закреплённый за другим микрофоном, гарнитуру не трогает."
+
+msgctxt "logic.footer-tooltip"
+msgid "“Headset” here means a Bluetooth or USB device. Headphones plugged into a jack don’t add a device, they switch the port, so this logic does not apply to them."
+msgstr "Гарнитура — Bluetooth или USB устройство. Наушники в разъёме не добавляют устройство, а меняют порт, их логика не касается."
+
+msgctxt "devices.section.bt"
+msgid "Bluetooth devices"
+msgstr "Bluetooth‑устройства"
+
+msgctxt "devices.kind.label"
+msgid "What is it:"
+msgstr "Что это:"
+
+msgctxt "devices.none"
+msgid "No Bluetooth devices yet"
+msgstr "Bluetooth‑устройств пока не было"
+
+msgctxt "devices.new.label"
+msgid "New device:"
+msgstr "Новое устройство:"
+
+msgctxt "devices.footer-tooltip"
+msgid "The type sets the icon and the behaviour: headsets and TWS earbuds follow the headset logic, speakers only take over the speakers. Until an answer is given, the device shows a “?” icon in the mixer and automation leaves it alone. The Bluetooth class is unreliable: the Tronsmart Element T6 Plus reports itself as a headset with a microphone."
+msgstr "Тип задаёт значок и поведение: гарнитура и TWS‑наушники — логика гарнитур, колонки переключают на себя только динамики. Пока ответа нет, у устройства в микшере значок с «?», и автоматика его не трогает. Класс Bluetooth ненадёжен: Tronsmart Element T6 Plus называет себя гарнитурой с микрофоном."
+
+msgctxt "devices.section.labels"
+msgid "Device labels"
+msgstr "Подписи устройств"
+
+msgctxt "devices.labels.sinks"
+msgid "Speakers:"
+msgstr "Динамики:"
+
+msgctxt "devices.labels.sources"
+msgid "Microphones:"
+msgstr "Микрофоны:"
+
+msgctxt "devices.labels.footer"
+msgid "The label is shown in place of the automatic one; the tooltip still shows the full device name."
+msgstr "Подпись показывается вместо автоматической; всплывающая подсказка по‑прежнему показывает полное имя устройства."
+
+msgctxt "devices.show-virtual"
+msgid "Show virtual devices"
+msgstr "Показывать виртуальные устройства"
+
+msgctxt "devices.label.placeholder"
+msgid "as shown in the mixer"
+msgstr "как в микшере"
+
+msgctxt "devices.label.reset-tooltip"
+msgid "Reset label"
+msgstr "Сбросить подпись"
+
+msgctxt "mixer.label.jack-mic"
+msgid ""
+"Microphone\n"
+"(jack)"
+msgstr ""
+"Микрофон\n"
+"(jack)"
+
+msgctxt "mixer.label.jack-headset"
+msgid ""
+"Headphones\n"
+"(jack)"
+msgstr ""
+"Наушники\n"
+"(jack)"
+
+msgctxt "mixer.label.jack-speaker"
+msgid ""
+"Speakers\n"
+"(jack)"
+msgstr ""
+"Колонки\n"
+"(jack)"
+
+msgctxt "mixer.label.usb-headset"
+msgid "USB headset"
+msgstr "USB‑гарнитура"
+
+msgctxt "mixer.label.usb-mic"
+msgid "USB microphone"
+msgstr "USB‑микрофон"
+
+msgctxt "mixer.label.bt-headset"
+msgid "Bluetooth headset"
+msgstr "Bluetooth‑гарнитура"
+
+msgctxt "mixer.label.bt-mic"
+msgid "Bluetooth microphone"
+msgstr "Bluetooth‑микрофон"
+
+msgctxt "mixer.label.hdmi"
+msgid "HDMI"
+msgstr "HDMI"
+
+msgctxt "mixer.label.internal-mic"
+msgid "Built-in microphone"
+msgstr "Встроенный микрофон"
+
+msgctxt "mixer.label.internal-speaker"
+msgid "Built-in speaker"
+msgstr "Встроенный динамик"
+
+msgctxt "mixer.label.mic"
+msgid "Microphone"
+msgstr "Микрофон"
+
+msgctxt "mixer.label.headset"
+msgid "Headset"
+msgstr "Гарнитура"
+
+msgctxt "mixer.label.speaker"
+msgid "Speaker"
+msgstr "Динамик"
+
+msgctxt "mixer.label.notifications"
+msgid "Notification sounds"
+msgstr "Звуки уведомлений"
+
+msgctxt "mixer.stream-no-name"
+msgid "Stream name not found"
+msgstr "Имя потока не найдено"
+
+msgctxt "mixer.menu.ask-tooltip"
+msgid "What is this device? Click and choose"
+msgstr "Что это за устройство? Нажмите и выберите"
+
+msgctxt "mixer.menu.what-is"
+msgid "%1 — what is it?"
+msgstr "%1 — что это?"
+
+msgctxt "mixer.volume-percent"
+msgid "%1%"
+msgstr "%1%"
+
+msgctxt "mixer.a11y.volume"
+msgid "Volume %1"
+msgstr "Громкость %1"
+
+msgctxt "@action:button mixer.button.unmute"
+msgid "Unmute"
+msgstr "Включить звук"
+
+msgctxt "@action:button mixer.button.mute"
+msgid "Mute"
+msgstr "Выключить звук"
+
+msgctxt "mixer.a11y.unmute-item"
+msgid "Unmute: %1"
+msgstr "Включить звук: %1"
+
+msgctxt "mixer.a11y.mute-item"
+msgid "Mute: %1"
+msgstr "Выключить звук: %1"
+
+msgctxt "plasmoid.display-name"
+msgid "Volume"
+msgstr "Громкость"
+
+msgctxt "@label plasmoid.err.lost"
+msgid "Connection to the sound service was lost"
+msgstr "Связь со звуковой службой потеряна"
+
+msgctxt "plasmoid.err.no-devices"
+msgid "No output or input devices found"
+msgstr "Устройств вывода и ввода не найдено"
+
+msgctxt "@info plasmoid.err.reconnecting"
+msgid "Reconnecting…"
+msgstr "Переподключение…"
+
+msgctxt "plasmoid.tooltip.muted"
+msgid "Sound is muted"
+msgstr "Звук выключен"
+
+msgctxt "plasmoid.tooltip.volume"
+msgid "Volume %1%"
+msgstr "Громкость %1%"
+
+msgctxt "plasmoid.tooltip.middle-unmute"
+msgid "Middle click: unmute"
+msgstr "Средняя кнопка: включить звук"
+
+msgctxt "plasmoid.tooltip.middle-mute"
+msgid "Middle click: mute everything"
+msgstr "Средняя кнопка: выключить весь звук"
+
+msgctxt "plasmoid.tooltip.wheel"
+msgid "Scroll wheel: change volume"
+msgstr "Колесо: изменить громкость"
+
+msgctxt "plasmoid.err.no-device-name"
+msgid "Device name not found"
+msgstr "Имя устройства не найдено"
+
+msgctxt "@action:button plasmoid.button.more"
+msgid "More actions"
+msgstr "Дополнительные действия"
+
+msgctxt "@action:button plasmoid.button.pin"
+msgid "Keep open"
+msgstr "Не закрывать"
+
+msgctxt "plasmoid.group.recording"
+msgid "Recording"
+msgstr "Запись"
+
+msgctxt "plasmoid.group.applications"
+msgid "Applications"
+msgstr "Приложения"
+
+msgctxt "plasmoid.group.notifications"
+msgid "Notifications"
+msgstr "Уведомления"
+
+msgctxt "plasmoid.group.microphones"
+msgid "Microphones"
+msgstr "Микрофоны"
+
+msgctxt "plasmoid.group.speakers"
+msgid "Speakers"
+msgstr "Динамики"
+
+msgctxt "@action plasmoid.button.retry"
+msgid "Retry"
+msgstr "Повторить"
+
+msgctxt "@info plasmoid.boost.warning"
+msgid "Prolonged use of this feature will damage the device’s speakers. Only turn it on briefly to make out a quiet recording."
+msgstr "Долгое использование этой функции повредит динамики устройства. Включайте её только ненадолго, чтобы расслышать тихую запись."
+
+msgctxt "plasmoid.boost.enable"
+msgid "Raise maximum volume"
+msgstr "Поднять максимальную громкость"
+
+msgctxt "plasmoid.action.mute-all-sinks"
+msgid "Force-mute every playback device"
+msgstr "Принудительно выключить звук всех устройств воспроизведения"
+
+msgctxt "plasmoid.action.mute-all-sources"
+msgid "Force-mute every input device"
+msgstr "Принудительно выключить все устройства ввода"
+
+msgctxt "plasmoid.action.show-virtual"
+msgid "Show virtual devices"
+msgstr "Показывать виртуальные устройства"
+
+msgctxt "plasmoid.action.configure"
+msgid "Configure audio devices…"
+msgstr "Настроить аудиоустройства…"
+
+msgctxt "general.item-width"
+msgid "Item width (px):"
+msgstr "Ширина элемента (px):"
+
+msgctxt "general.slider-height"
+msgid "Slider height (px):"
+msgstr "Высота ползунка (px):"
+
+msgctxt "general.font.label"
+msgid "Label font:"
+msgstr "Шрифт подписей:"
+
+msgctxt "general.font.summary"
+msgid "%1, %2 pt%3"
+msgstr "%1, %2 pt%3"
+
+msgctxt "general.font.bold-suffix"
+msgid ", bold"
+msgstr ", жирный"
+
+msgctxt "general.font.system-summary"
+msgid "System (%1, %2 pt)"
+msgstr "Системный (%1, %2 pt)"
+
+msgctxt "general.font.choose"
+msgid "Choose…"
+msgstr "Выбрать…"
+
+msgctxt "general.font.system"
+msgid "System"
+msgstr "Системный"
+
+msgctxt "general.accent-color"
+msgid "Accent colour:"
+msgstr "Цвет акцента:"
+
+msgctxt "general.accent-color.hint"
+msgid "marks the default device and lights the mute-button LED"
+msgstr "отметка основного устройства и светодиод кнопки «Без звука»"
+
+msgctxt "general.default-mark.label"
+msgid "Default device:"
+msgstr "Устройство по умолчанию:"
+
+msgctxt "general.default-mark.corner"
+msgid "Radio button above the icon"
+msgstr "Радиокнопка над значком"
+
+msgctxt "general.default-mark.badge"
+msgid "Checkmark in the icon’s corner"
+msgstr "Галочка в углу значка"
+
+msgctxt "general.default-mark.halo"
+msgid "Icon halo"
+msgstr "Подсветка значка"
+
+msgctxt "general.default-mark.bottom"
+msgid "Radio button at the bottom, next to the mute button"
+msgstr "Радиокнопка внизу, у «Без звука»"
+
+msgctxt "general.mute-style.label"
+msgid "Mute button:"
+msgstr "Кнопка «Без звука»:"
+
+msgctxt "general.mute-style.theme"
+msgid "Theme icon"
+msgstr "Значок темы"
+
+msgctxt "general.mute-style.icons8"
+msgid "Volumetric icon, like the devices"
+msgstr "Объёмный значок, как у устройств"
+
+msgctxt "general.mute-style.led"
+msgid "Button with an LED"
+msgstr "Кнопка со светодиодом"
+
+msgctxt "general.led-blink.label"
+msgid "LED blinking:"
+msgstr "Мигание огонька:"
+
+msgctxt "general.led-blink.off"
+msgid "Don’t blink"
+msgstr "Не мигать"
+
+msgctxt "general.led-blink.muted"
+msgid "Blink when muted"
+msgstr "Мигать, когда без звука"
+
+msgctxt "general.led-blink.signal"
+msgid "Pulse with the signal"
+msgstr "В такт сигналу"
+
+msgctxt "general.section.bars"
+msgid "Volume bars"
+msgstr "Полоски громкости"
+
+msgctxt "general.bar-shape.label"
+msgid "Shape:"
+msgstr "Форма:"
+
+msgctxt "general.bar-shape.wedge"
+msgid "Wedge, handle on the left"
+msgstr "Клин, бегунок слева"
+
+msgctxt "general.bar-shape.bar"
+msgid "Narrow rectangle, handle in the centre"
+msgstr "Узкий прямоугольник, бегунок по центру"
+
+msgctxt "general.bar-shape.barleft"
+msgid "Narrow rectangle, handle on the left"
+msgstr "Узкий прямоугольник, бегунок слева"
+
+msgctxt "general.handle.label"
+msgid "Handle:"
+msgstr "Ручка:"
+
+msgctxt "general.handle.horizontal"
+msgid "Horizontal"
+msgstr "Горизонтально"
+
+msgctxt "general.handle.vertical"
+msgid "Vertical"
+msgstr "Вертикально"
+
+msgctxt "general.fill.label"
+msgid "Fill:"
+msgstr "Заливка:"
+
+msgctxt "general.fill.plain"
+msgid "Plain"
+msgstr "Обычная"
+
+msgctxt "general.fill.glass"
+msgid "Glass"
+msgstr "Стекло"
+
+msgctxt "general.fill.led"
+msgid "LED meter"
+msgstr "Светодиодная линейка"
+
+msgctxt "general.signal-scale.label"
+msgid "Signal-level scale:"
+msgstr "Шкала уровня сигнала:"
+
+msgctxt "general.signal-scale.linear"
+msgid "Linear: peak as-is, speech ≈ 25 %"
+msgstr "Линейная: пик как есть, речь ≈ 25 %"
+
+msgctxt "general.signal-scale.db"
+msgid "In decibels, 60 dB: speech ≈ 80 %"
+msgstr "В децибелах, 60 дБ: речь ≈ 80 %"
+
+msgctxt "general.custom-colors"
+msgid "Custom colours (otherwise theme colours)"
+msgstr "Свои цвета (иначе цвета темы)"
+
+msgctxt "general.zone-colors"
+msgid "Colour volume by level: green, yellow, red"
+msgstr "Громкость цветом по уровню: зелёный, жёлтый, красный"
+
+msgctxt "general.zone-by-signal"
+msgid "Fill tracks the signal: zone height and colour follow its level, no stream — empty"
+msgstr "Заливка показывает сигнал: высота и цвет зоны по его уровню, без потока — пусто"
+
+msgctxt "general.volume.label"
+msgid "Volume:"
+msgstr "Громкость:"
+
+msgctxt "general.opacity"
+msgid "opacity"
+msgstr "непрозрачность"
+
+msgctxt "general.signal.label"
+msgid "Signal level:"
+msgstr "Уровень сигнала:"
+
+msgctxt "general.dim.label"
+msgid "Unfilled part:"
+msgstr "Незаполненная часть:"
+
+msgctxt "general.font.dialog-title"
+msgid "Font for device and application labels"
+msgstr "Шрифт подписей устройств и приложений"
+
+msgctxt "mixer.default-radio.on"
+msgid "Default device"
+msgstr "Устройство по умолчанию"
+
+msgctxt "mixer.default-radio.off"
+msgid "Set as default device"
+msgstr "Сделать устройством по умолчанию"
